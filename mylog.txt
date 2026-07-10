@@ -460,4 +460,89 @@ $ git push https://github.com/GauravPendyal/SE_lab-1
 Everything up-to-date
 
 fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git add .
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git commit -m "Hello"
+[master 7f1647b] Hello
+ 1 file changed, 191 insertions(+), 1 deletion(-)
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git push https://github.com/GauravPendyal/SE_lab-1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.37 KiB | 701.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/GauravPendyal/SE_lab-1
+   1a4b676..7f1647b  master -> master
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ history
+    1  ls
+    2  git init
+    3  ls
+    4  pwd
+    5  vi v.txt
+    6  vi v.txt
+    7  ls
+    8  git status
+    9  git add v.txt
+   10  git status
+   11  ls
+   12  ls -a
+   13  git config --global --list
+   14  git global --config --list
+   15  git config --global --list
+   16  git config --global --user.name = Gaurav
+   17  git config --global user.name "Gaurav"
+   18  git config --global --list
+   19  git config --global user.email "pendyalgaurav@gmail.com"
+   20  git config --global --list
+   21  git commit -m "Hello"
+   22  git lock
+   23  git loc
+   24  git log
+   25*
+   26  git remote -v
+   27  git remote add github.com/GauravPendyal/SE_lab-1
+   28  git remote add Gaurav github.com/GauravPendyal/SE_lab-1
+   29  git remote add master github.com/GauravPendyal/SE_lab-1
+   30  git remote -v
+   31  git push
+   32  git push github.com/GauravPendyal/SE_lab-1
+   33  git push https://github.com/GauravPendyal/SE_lab-1
+   34  git push https://github.com/GauravPendyal/SE_lab-1
+   35  nano mylog.txt
+   36  git add mylog.txt
+   37  git commit -m "Hello"
+   38  git push https://github.com/GauravPendyal/SE_lab-1
+   39  git log
+   40  touch file.txt
+   41  git add .
+   42  git commit -m "Hello"
+   43  git push
+   44  git push https://github.com/GauravPendyal/SE_lab-1
+   45  git push
+   46  git remote -v
+   47  git pull
+   48  git pull https://github.com/GauravPendyal/SE_lab-1
+   49  git push
+   50  git push https://github.com/GauravPendyal/SE_lab-1
+   51  touch file2.txt
+   52  git add .
+   53  git commit -m "Hello"
+   54  git push https://github.com/GauravPendyal/SE_lab-1
+   55  git push https://github.com/GauravPendyal/SE_lab-1
+   56  git pull https://github.com/GauravPendyal/SE_lab-1
+   57  git push https://github.com/GauravPendyal/SE_lab-1
+   58  git add .
+   59  git commit -m "Hello"
+   60  git push https://github.com/GauravPendyal/SE_lab-1
+   61  history
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
 $
+

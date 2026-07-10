@@ -1,0 +1,273 @@
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B
+$ ls
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B
+$ git init
+Initialized empty Git repository in C:/SE_5B/.git/
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ ls
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ pwd
+/c/SE_5B
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ vi v.txt
+
+[1]+  Stopped                 vi v.txt
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ vi v.txt
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ ls
+v.txt
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .v.txt.swp
+        v.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git add v.txt
+warning: in the working copy of 'v.txt', LF will be replaced by CRLF the next time Git touches it
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   v.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .v.txt.swp
+
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ ls
+v.txt
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ ls -a
+./  ../  .git/  .v.txt.swp  v.txt
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git config --global --list
+fatal: unable to read config file 'C:/Users/fs/.gitconfig': No such file or directory
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git global --config --list
+git: 'global' is not a git command. See 'git --help'.
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git config --global --list
+fatal: unable to read config file 'C:/Users/fs/.gitconfig': No such file or directory
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git config --global --user.name = Gaurav
+error: unknown option `user.name'
+usage: git config list [<file-option>] [<display-option>] [--includes]
+   or: git config get [<file-option>] [<display-option>] [--includes] [--all] [--regexp] [--value=<pattern>] [--fixed-value] [--default=<default>] [--url=<url>] <name>
+   or: git config set [<file-option>] [--type=<type>] [--all] [--value=<pattern>] [--fixed-value] <name> <value>
+   or: git config unset [<file-option>] [--all] [--value=<pattern>] [--fixed-value] <name>
+   or: git config rename-section [<file-option>] <old-name> <new-name>
+   or: git config remove-section [<file-option>] <name>
+   or: git config edit [<file-option>]
+   or: git config [<file-option>] --get-colorbool <name> [<stdout-is-tty>]
+
+Config file location
+    --[no-]global         use global config file
+    --[no-]system         use system config file
+    --[no-]local          use repository config file
+    --[no-]worktree       use per-worktree config file
+    -f, --[no-]file <file>
+                          use given config file
+    --[no-]blob <blob-id> read config from given blob object
+
+Action
+    --get                 get value: name [<value-pattern>]
+    --get-all             get all values: key [<value-pattern>]
+    --get-regexp          get values for regexp: name-regex [<value-pattern>]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [<value-pattern>]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [<value-pattern>]
+    --unset-all           remove all matches: name [<value-pattern>]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [<default>]
+    --get-colorbool       find the color setting: slot [<stdout-is-tty>]
+
+Display options
+    -z, --[no-]null       terminate values with NUL byte
+    --[no-]name-only      show variable names only
+    --[no-]show-origin    show origin of config (file, standard input, blob, command line)
+    --[no-]show-scope     show scope of config (worktree, local, global, system, command)
+    --[no-]show-names     show config keys in addition to their values
+
+Type
+    -t, --[no-]type <type>
+                          value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    --[no-]default <value>
+                          with --get, use default value when missing entry
+    --[no-]comment <value>
+                          human-readable comment string (# will be prepended as needed)
+    --[no-]fixed-value    use string equality when comparing values to value pattern
+    --[no-]includes       respect include directives on lookup
+
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git config --global user.name "Gaurav"
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git config --global --list
+user.name=Gaurav
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git config --global user.email "pendyalgaurav@gmail.com"
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git config --global --list
+user.name=Gaurav
+user.email=pendyalgaurav@gmail.com
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git commit -m "Hello"
+[master (root-commit) 63939f8] Hello
+ 1 file changed, 3 insertions(+)
+ create mode 100644 v.txt
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git lock
+git: 'lock' is not a git command. See 'git --help'.
+
+The most similar commands are
+        fsck
+        hook
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git loc
+git: 'loc' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git log
+commit 63939f8148e01eb6a92d7ba4eb297d0e4d9c0cca (HEAD -> master)
+Author: Gaurav <pendyalgaurav@gmail.com>
+Date:   Fri Jul 10 14:42:32 2026 +0530
+
+    Hello
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git remote -v
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git remote add github.com/GauravPendyal/SE_lab-1
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git remote add Gaurav github.com/GauravPendyal/SE_lab-1
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git remote add master github.com/GauravPendyal/SE_lab-1
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git remote -v
+Gaurav  github.com/GauravPendyal/SE_lab-1 (fetch)
+Gaurav  github.com/GauravPendyal/SE_lab-1 (push)
+master  github.com/GauravPendyal/SE_lab-1 (fetch)
+master  github.com/GauravPendyal/SE_lab-1 (push)
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git push github.com/GauravPendyal/SE_lab-1
+fatal: 'github.com/GauravPendyal/SE_lab-1' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git push https://github.com/GauravPendyal/SE_lab-1
+info: please complete authentication in your browser...
+
+
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ git push https://github.com/GauravPendyal/SE_lab-1
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 291 bytes | 145.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/GauravPendyal/SE_lab-1
+ * [new branch]      master -> master
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$ nano mylog.txt
+
+fs@DESKTOP-P44M87A MINGW64 /c/SE_5B (master)
+$
+
